@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <main class="main-container">
+      <h1 class="title">All Messages</h1>
+      <div class="messages-container">
+        <% if (messages.length > 0) { %> <% messages.forEach(message => { %>
+        <div class="message-card">
+          <p><%= message.user %></p>
+          <p><%= message.date.toString().slice(4,15) %></p>
+          <h3><%= message.text %></h3>
+        </div>
+        <% }) %> <% } else { %>
+        <p>No messages found.</p>
+        <% } %>
+      </div>
+    </main>
+  </body>
+</html>
