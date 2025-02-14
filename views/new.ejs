@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <main class="main-container">
+      <h1 class="title">Add Message</h1>
+      <form method="post" action="/new" class="add-msg-form">
+        <div class="form-item">
+          <label for="user-input">Username</label
+          ><input
+            type="text"
+            class="inp"
+            name=""
+            id="user-input"
+            placeholder="enter username"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label for="text-input">Content</label>
+          <textarea
+            class="inp"
+            name=""
+            id="text-input"
+            placeholder="enter message content"
+            required
+          ></textarea>
+        </div>
+        <div class="form-item">
+          <button type="submit" class="btn" id="add-msg-btn">Add</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

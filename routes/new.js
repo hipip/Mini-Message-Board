@@ -1,10 +1,9 @@
 const { Router } = require("express");
-const messages = require("../db");
 
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.render("index", { title: "Home Page", messages });
+  res.render("new", { title: "Add Message Page" });
 });
 
 module.exports = router;

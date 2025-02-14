@@ -11,8 +11,13 @@ body {
   font-family: "Montserrat", serif;
 }
 
-button {
-  cursor: pointer;
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
   border: none;
   outline: none;
 }
@@ -30,6 +35,7 @@ header {
 }
 
 .btn {
+  cursor: pointer;
   padding: 5px 30px;
   font-size: 1.15rem;
   border-radius: 10px;
@@ -57,4 +63,33 @@ header {
   flex-direction: column;
   border: 1px solid lightgray;
   border-radius: 10px;
+}
+
+.add-msg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+}
+
+.form-item label {
+  flex: 0 1 120px;
+}
+
+.inp {
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #ececec;
+}
+#add-msg-btn {
+  width: 100%;
 }
